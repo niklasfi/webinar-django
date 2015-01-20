@@ -1,5 +1,7 @@
 from django.shortcuts import render
+from blog.models import *
 
 # Create your views here.
 def index(request):
-  return render(request, 'blog/index.tpl')
+  posts = Post.objects.all()
+  return render(request, 'blog/index.tpl', {'posts': posts})
