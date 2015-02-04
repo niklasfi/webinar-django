@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   height="1000"
+   width="866"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="bitbucket-w.svg">
+  <metadata
+     id="metadata10">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs8" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1014"
+     id="namedview6"
+     showgrid="false"
+     inkscape:zoom="0.6675088"
+     inkscape:cx="184.65588"
+     inkscape:cy="432.8049"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2" />
+  <path
+     d="M0 144q0-60 127-102t306-42q180 0 306.5 42t126.5 102q0 12-72 440-9 46-111 89t-250 43-250-43-110-89q-73-414-73-440zm107 581l0-4q0-17 15-17 6 0 12 5 47 37 122 58t126 23l51 3q8 0 21.5-.5t52.5-5 74.5-12.5 78.5-25 73-41l11-5q16 0 16 17 0 2-1 4-22 121-30 161-11 49-96 81.5t-200 32.5-200-32.5-95-81.5q-19-95-31-161zm49-596q0 24 81.5 41.5t195.5 17.5q115 0 196.5-17t81.5-41q0-25-81.5-42.5t-196.5-17.5-196 17-81 42zm139 353q0 57 40.5 97.5t97.5 40.5 97.5-40.5 40.5-97.5-40.5-97.5-97.5-40.5-97.5 40.5-40.5 97.5zm69 0q0 28 20 48.5t49 20.5 49-20.5 20-48.5-20-48.5-49-20.5-49 20.5-20 48.5z"
+     id="path4"
+     style="fill:#ffffff" />
+</svg>
