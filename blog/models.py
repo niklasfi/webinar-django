@@ -8,3 +8,9 @@ class Post(models.Model):
 
   class Meta:
     ordering = ['-published']
+
+  def __str__(self):
+    return "{title} ({published})".format(
+        title=self.title,
+        published=self.published.date()
+    )
