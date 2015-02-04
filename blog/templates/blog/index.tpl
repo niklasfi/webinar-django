@@ -3,14 +3,15 @@
 {% block title %}Index{% endblock %}
 {% block mheading %}Blog Index{% endblock %}
 {% block body %}
-  Welcome to my Blog. Here are some Posts:
+  Welcome to my Blog. You are at the post index.
 
   {% for post in posts %}
     <article>
-      <h2>{{post.title}}</h2>
-      <p>{{post.body}}</p>
+      <p>
+        {{post.title}} – {{post.published}}
+      </p>
     </article>
   {% empty %}
-    <p>I'm afraid nothing has been posted, yet. Stay tuned!</p>
+    I'm afraid nothing has been posted, yet. Stay tuned!
   {% endfor %}
 {% endblock %}
