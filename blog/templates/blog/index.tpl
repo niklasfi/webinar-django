@@ -8,7 +8,10 @@
   {% for post in posts %}
     <article>
       <p>
-        {{post.title}} – {{post.published}}
+        <a href="{% url 'blog.views.post_detail' post.pk %}">
+          {{post.title}}
+        </a>
+         – {{post.published}}
       </p>
     </article>
   {% empty %}

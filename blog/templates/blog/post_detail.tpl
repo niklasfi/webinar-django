@@ -5,4 +5,5 @@
 {% block body %}
   <p>{{post.body}}</p>
   <p>{{post.published}}</p>
+  <p><a href="{% url 'blog.views.index' %}">index</a></p>
 {% endblock %}
