@@ -1,4 +1,5 @@
 {% extends 'blog/master.tpl' %}
+{% load humanize %}
 
 {% block title %}Index{% endblock %}
 {% block mheading %}Blog Index{% endblock %}
@@ -11,7 +12,7 @@
         <a href="{% url 'blog.views.post_detail' post.pk %}">
           {{post.title}}
         </a>
-         – {{post.published}}
+         – {{post.published|naturaltime}}
       </p>
     </article>
   {% empty %}
