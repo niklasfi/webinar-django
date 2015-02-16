@@ -8,12 +8,13 @@
 
   {% for post in posts %}
     <article>
-      <p>
-        <a href="{% url 'blog.views.post_detail' post.pk %}">
-          {{post.title}}
-        </a>
-         – {{post.published|naturaltime}}
-      </p>
+      <h2>
+        <a href="{% url 'blog.views.post_detail' post.pk %}">{{post.title}}</a>
+      </h2>
+      <div>
+        {{post.body|truncatewords_html:"5"|safe}}
+        <p>{{post.published|naturaltime}}</p>
+      </div>
     </article>
   {% empty %}
     I'm afraid nothing has been posted, yet. Stay tuned!
