@@ -15,6 +15,20 @@ def post_detail(request, post_pk):
   except Post.DoesNotExist:
     raise Http404('Post does not exist')
 
-  form = CommentForm()
+  if request.method == 'POST':
+    form = CommentForm(request.POST)
+
+    if form.is_valid():
+      #process form
+      Comment.objects.create(
+          post=post,
+          nick=form.cleaned_data['nick'],
+          body=form.cleaned_data['body']
+      )
+    else:
+      #form is invalid, output blank one
+      form = CommentForm()
+  else:
+    form = CommentForm()
 
   return render(request, 'blog/post_detail.tpl', {'post': post, 'form': form}, context_instance=RequestContext(request))
