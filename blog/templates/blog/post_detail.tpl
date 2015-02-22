@@ -12,6 +12,7 @@
       <p>{{comment.nick}}: {{comment.body}} – <em>{{comment.published|naturaltime}}</em></p>
     {% endfor %}
     <form method="POST" action="{% url 'blog.views.post_detail' post.pk %}">
+      {% csrf_token %}
       {{form.as_p}}
       <button>submit</button>
     </form>
