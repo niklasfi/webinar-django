@@ -14,6 +14,4 @@ def post_detail(request, post_pk):
   except Post.DoesNotExist:
     raise Http404('Post does not exist')
 
-  comments = post.comment_set.all()
-
-  return render(request, 'blog/post_detail.tpl', {'post': post, 'comments': comments})
+  return render(request, 'blog/post_detail.tpl', {'post': post})

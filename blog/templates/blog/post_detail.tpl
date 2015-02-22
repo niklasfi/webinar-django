@@ -8,7 +8,7 @@
   <p>{{post.published|naturaltime}}</p>
   <p><a href="{% url 'blog.views.index' %}">index</a></p>
   <section>
-    {% for comment in comments %}
+    {% for comment in post.comment_set.all %}
       <p>{{comment.nick}}: {{comment.body}} – <em>{{comment.published|naturaltime}}</em></p>
     {% endfor %}
   </section>
