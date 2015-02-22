@@ -12,7 +12,7 @@
       <p>{{comment.nick}}: {{comment.body}} – <em>{{comment.published|naturaltime}}</em></p>
     {% endfor %}
     <form>
-      {{form}}
+      {{form.as_p}}
       <button>submit</button>
     </form>
   </section>
