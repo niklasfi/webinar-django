@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.template import RequestContext
 from django.http import Http404
 from blog.models import *
 from blog.forms import *
@@ -16,4 +17,4 @@ def post_detail(request, post_pk):
 
   form = CommentForm()
 
-  return render(request, 'blog/post_detail.tpl', {'post': post, 'form': form})
+  return render(request, 'blog/post_detail.tpl', {'post': post, 'form': form}, context_instance=RequestContext(request))
