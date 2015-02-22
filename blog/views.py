@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import Http404
 from blog.models import *
+from blog.forms import *
 
 # Create your views here.
 def index(request):
@@ -12,4 +13,7 @@ def post_detail(request, post_pk):
     post = Post.objects.get(pk=post_pk)
   except Post.DoesNotExist:
     raise Http404('Post does not exist')
-  return render(request, 'blog/post_detail.tpl', {'post': post})
+
+  comments = post.comment_set.all()
+
+  return render(request, 'blog/post_detail.tpl', {'post': post, 'comments': comments})

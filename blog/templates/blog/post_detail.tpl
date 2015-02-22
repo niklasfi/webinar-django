@@ -7,4 +7,9 @@
   <div>{{post.body|safe}}</div>
   <p>{{post.published|naturaltime}}</p>
   <p><a href="{% url 'blog.views.index' %}">index</a></p>
+  <section>
+    {% for comment in comments %}
+      <p>{{comment.nick}}: {{comment.body}} – <em>{{comment.published|naturaltime}}</em></p>
+    {% endfor %}
+  </section>
 {% endblock %}
