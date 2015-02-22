@@ -11,7 +11,7 @@
     {% for comment in post.comment_set.all %}
       <p>{{comment.nick}}: {{comment.body}} – <em>{{comment.published|naturaltime}}</em></p>
     {% endfor %}
-    <form>
+    <form method="POST" action="{% url 'blog.views.post_detail' post.pk %}">
       {{form.as_p}}
       <button>submit</button>
     </form>
