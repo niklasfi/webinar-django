@@ -11,5 +11,9 @@
     {% for comment in post.comment_set.all %}
       <p>{{comment.nick}}: {{comment.body}} – <em>{{comment.published|naturaltime}}</em></p>
     {% endfor %}
+    <form>
+      {{form}}
+      <button>submit</button>
+    </form>
   </section>
 {% endblock %}

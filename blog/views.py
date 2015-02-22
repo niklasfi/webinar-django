@@ -14,4 +14,6 @@ def post_detail(request, post_pk):
   except Post.DoesNotExist:
     raise Http404('Post does not exist')
 
-  return render(request, 'blog/post_detail.tpl', {'post': post})
+  form = CommentForm()
+
+  return render(request, 'blog/post_detail.tpl', {'post': post, 'form': form})
