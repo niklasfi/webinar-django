@@ -19,4 +19,16 @@
   {% empty %}
     I'm afraid nothing has been posted, yet. Stay tuned!
   {% endfor %}
+
+  <p>
+      {% if device_info.type == 'phone' %}
+        This is a phone
+      {% elif device_info.type == 'tablet' %}
+        This is a tablet
+      {% elif device_info.type == 'desktop' %}
+        This is a desktop
+      {% else %}
+        We don't recognize the device
+      {% endif %}
+   </p>
 {% endblock %}
